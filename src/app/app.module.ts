@@ -10,6 +10,9 @@ import { DataTableComponent } from './data-table/data-table.component';
 
 import { MatInputModule, MatPaginatorModule, MatProgressSpinnerModule, 
   MatSortModule, MatTableModule } from "@angular/material";
+import { SidenavComponent } from './sidenav/sidenav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const routes: Routes = [
@@ -22,20 +25,22 @@ const routes: Routes = [
     AppComponent,
     SidebarMenuComponent,
     BlogsComponent,
-    DataTableComponent
+    DataTableComponent,
+    SidenavComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
     AppRoutingModule,
     BrowserModule,
-    //BrowserAnimationsModule,
+    BrowserAnimationsModule,
     //HttpClientModule,
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-        MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

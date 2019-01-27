@@ -1,0 +1,11 @@
+<mat-sidenav-container class="sidenav-container" [style.display]="opened ? 'block' : 'none' ">
+  <mat-sidenav class="sidenav-sidenav" mode="side" position="end" [(opened)]="opened">
+    <ng-content></ng-content>
+    <button class="panel__fab" [ngClass]="opened? 'show':''" type="button" name="button" (click)="onClose()">
+     Close
+    </button>
+  </mat-sidenav>
+  <div class="sidenav-underlay" [style.display]="opened ? 'block' : 'none' " (click)="onClose()"></div>
+</mat-sidenav-container>
+<button (click)="open()">  Open </button>
+
