@@ -13,6 +13,7 @@ import { MatInputModule, MatPaginatorModule, MatProgressSpinnerModule,
 import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactDetailsComponent } from './contact-details/contact-details.component';
 
 
 const routes: Routes = [
@@ -26,7 +27,8 @@ const routes: Routes = [
     SidebarMenuComponent,
     BlogsComponent,
     DataTableComponent,
-    SidenavComponent
+    SidenavComponent,
+    ContactDetailsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

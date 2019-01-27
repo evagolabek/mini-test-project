@@ -7,6 +7,7 @@
   z-index: 302; 
   border: 3px solid blue;
   width: 500px;
+  background-color: aqua;
 }
 
 .sidenav-underlay {
