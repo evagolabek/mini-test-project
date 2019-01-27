@@ -1,0 +1,14 @@
+.menu-container {
+  width: 200px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.menu-tab > a, li {
+  padding-bottom: 10px;
+  border-bottom: 15px solid red;
+  color: green;
+  text-decoration: none;
+  list-style-type: none;
+}
+
