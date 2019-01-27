@@ -6,3 +6,9 @@
   float: left;
   margin-left: 10px
 }
+
+.blogs-container {
+  width: 800px;
+  height: 100px;
+  border: 2px solid red;
+}
