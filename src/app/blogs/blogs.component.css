@@ -1,0 +1,8 @@
+.blog-container {
+  align-self: auto;
+  padding: 10px;
+  position: inherit;
+  border: 1px solid green;
+  float: left;
+  margin-left: 10px
+}
