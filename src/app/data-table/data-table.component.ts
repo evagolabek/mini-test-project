@@ -35,4 +35,9 @@ export class DataTableComponent implements OnInit {
   ngOnInit() {
   }
 
+  clicked(row){
+    console.log('it works')
+    console.log(row['name'])
+    
+  }
 }
