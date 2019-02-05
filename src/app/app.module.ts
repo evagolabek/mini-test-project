@@ -14,6 +14,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 const routes: Routes = [
@@ -36,7 +37,7 @@ const routes: Routes = [
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    //HttpClientModule,
+    HttpClientModule,
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
