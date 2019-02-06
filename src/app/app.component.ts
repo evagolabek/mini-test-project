@@ -7,9 +7,9 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-project';
-  
-  message = this.http.get<any[]>('http://localhost:4201');
+  // title = 'my-project';
+
+  messages = this.http.get<any[]>('http://localhost:4201');
 
   constructor(private http: HttpClient ) {}
 }

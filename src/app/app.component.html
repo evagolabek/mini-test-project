@@ -1,5 +1,16 @@
- 
-    <div *ngFor="let message of messages | async">
-      {{message.message}}
+  <!-- <div>
+    <app-sidenav>
+      <app-contact-details></app-contact-details>
+    </app-sidenav>
+    <app-sidenav>
+        <app-table></app-table>
+      </app-sidenav>
+    <app-sidebar-menu></app-sidebar-menu>
+    <div>
+      <router-outlet></router-outlet>
     </div>
+  </div> -->
   
+  <div *ngFor="let message of messages | async">
+    {{message.message}}
+  </div>
