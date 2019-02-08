@@ -15,6 +15,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -44,6 +45,7 @@ const routes: Routes = [
     MatSortModule,
     MatProgressSpinnerModule,
     MatSidenavModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

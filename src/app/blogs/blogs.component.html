@@ -1,25 +1,25 @@
 <div class="blogs-container">
-  <h1>Blogers</h1>
-  <label class="container">MyCoolComp
+  <h1>Bloggghers</h1>
+  <!-- <label class="container">MyCoolComp
       <input type="checkbox" checked="checked">
       <span class="checkmark"></span>
   </label>
   <label class="container">TheDestiny
       <input type="checkbox" checked="checked">
       <span class="checkmark"></span>
-  </label>
+  </label> -->
   <h1>Filter blogs by:</h1>
   <h2>Type</h2>
   <label class="container">Cool
-      <input type="checkbox" checked="checked">
+      <input type="checkbox" (change)="typeChecked('Cool')" />
       <span class="checkmark"></span>
   </label>
   <label class="container">Not cool
-      <input type="checkbox" checked="checked">
+      <input type="checkbox" (change)="typeChecked('Not Cool')" />
       <span class="checkmark"></span>
   </label>
     <br>
-  <h2>Status</h2>
+  <!-- <h2>Status</h2>
   <label class="container">Active
     <input type="checkbox" checked="checked">
     <span class="checkmark"></span>
@@ -27,8 +27,33 @@
   <label class="container">Inactive
     <input type="checkbox" checked="checked">
     <span class="checkmark"></span>
-  </label>
+  </label> -->
   
   <!-- <app-data-table></app-data-table> -->
 </div>
+<br>
+<br>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <ng-container matColumnDef="blogger">
+      <th mat-header-cell *matHeaderCellDef> Blogger </th>
+      <td mat-cell *matCellDef="let element"> {{element.blogger}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="type">
+      <th mat-header-cell *matHeaderCellDef> Type </th>
+      <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> Status </th>
+      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row (click)="clicked(row)" *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
 
