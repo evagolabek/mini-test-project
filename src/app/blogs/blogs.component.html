@@ -1,33 +1,41 @@
 <div class="blogs-container">
   <h1>Bloggghers</h1>
-  <!-- <label class="container">MyCoolComp
-      <input type="checkbox" checked="checked">
+  <label class="container">MyCoolComp
+      <input type="checkbox" (change)="Checked('blogger','MyCoolComp')" >
       <span class="checkmark"></span>
   </label>
   <label class="container">TheDestiny
-      <input type="checkbox" checked="checked">
+      <input type="checkbox" (change)="Checked('blogger','TheDestiny')" >
       <span class="checkmark"></span>
-  </label> -->
+  </label>
+  <label class="container">Test
+      <input type="checkbox" (change)="Checked('blogger','Test')" >
+      <span class="checkmark"></span>
+  </label>
   <h1>Filter blogs by:</h1>
   <h2>Type</h2>
   <label class="container">Cool
-      <input type="checkbox" (change)="typeChecked('Cool')" />
+      <input type="checkbox" (change)="Checked('type','Cool')" />
       <span class="checkmark"></span>
   </label>
-  <label class="container">Not cool
-      <input type="checkbox" (change)="typeChecked('Not Cool')" />
+  <label class="container">Average
+      <input type="checkbox" (change)="Checked('type','Average')" />
+      <span class="checkmark"></span>
+  </label>
+  <label class="container">Mediocre
+      <input type="checkbox" (change)="Checked('type','Mediocre')" />
       <span class="checkmark"></span>
   </label>
     <br>
-  <!-- <h2>Status</h2>
+  <h2>Status</h2>
   <label class="container">Active
-    <input type="checkbox" checked="checked">
+    <input type="checkbox" (change)="Checked('status','Active')">
     <span class="checkmark"></span>
   </label>
   <label class="container">Inactive
-    <input type="checkbox" checked="checked">
+    <input type="checkbox" (change)="Checked('status','Inactive')">
     <span class="checkmark"></span>
-  </label> -->
+  </label>
   
   <!-- <app-data-table></app-data-table> -->
 </div>
