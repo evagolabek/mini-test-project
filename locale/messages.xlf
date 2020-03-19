@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="myownstuff" datatype="html">
+        <source>
+  <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>text to translate<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/blogs/blogs.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description"> to translate.</note>
+        <note priority="1" from="meaning">text </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

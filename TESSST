@@ -1,0 +1,33 @@
+this.devicesTable = {
+          displayedColumns: displayedColumns,
+          header: deviceDetailHeaderRow,
+          data: deviceDetailDataRows,
+          sortData: (data, sort) => data.sort(myCompareFunction)
+
+          sortData: (data, sort) => data.sort(myDateCompareFunction)  //if you want to compare a date
+        }
+
+
+        const convertLabelToNumber = (label: string): number => {
+          switch (label) {
+            case 'High':
+              return 0;
+            case 'Medium':
+              return 1;
+            case 'Low':
+              return 2;
+            default:
+              return 3;
+          }
+        }
+        export const myCompareFunction = (a: DataPoint, b: DataPoint) => {
+          return convertLabelToNumber(a.Label) - convertLabelToNumber(b.Label);   
+        };
+
+
+        export const myDateCompareFunction = (a, b) => {
+          let c = new Date(a.timeLastUpdate);
+          let d = new Date(b.timeLastUpdate);
+          return c-d;
+        }
+        
